@@ -1,32 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.bground_container{
+    background-color:  #cdd0dfbb;
+    border-radius: 38px;
+    display: flex;
+    height: calc(100vh - 40px);
+}
 
 .container{
+    margin: 10px;
     width: 25vw;
-    background-color: rgba(255, 255, 255, 0.925);
-    border-radius: 20px;
-    border: solid 8px #A7D2EF;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 38px;
     flex-direction: column;
+    padding: 10px;
 }
 
 .conteudo{
-    background-color: #CFD4E0;
+    background-color: #aeaec0;
     border-radius: 38px;
-    padding: 1%;
+    padding: 10px;
     margin: 5px;
-    height: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 8px solid #D8E0F3;
+    border: 8px solid #dae2f18f;
 }
 
 .ajustes{
-    background-color: #dee4e8e1;
+    background-color: #dee0e8e1;
     border-radius: 38px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
-
 }
 
 .hello{
@@ -42,15 +50,48 @@
 }
 
 .configbutao{
-    height: 15%;
-    width: 90%;
-    margin-bottom: 20px;
+    height: 40px;
+    font-family: 'DM Sans';
+    width: 100%;
     border-radius: 20px;
     border: none;
     font-weight: bold;
     color: white;
     font-size: 20px;
     background-color: #737782;
+    margin-top: 10px;
+}
+
+.configbutao1{
+    height: 8%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-family: 'DM Sans';
+    color: black;
+    font-size: 20px;
+    background-color: #b6b8c086;
     margin-top: 4%;
-    
+}
+
+.configbutao1:hover{
+    background-color: #4c4e53a2;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 15px rgba(0, 0,0,.3);
+}
+
+.navImgs{
+    margin-left: 1%;
+    margin-right: 4%;
+    width: 50px;
+    object-fit: contain;
+}
+
+.navBarBtns{
+    text-decoration: none;
 }
