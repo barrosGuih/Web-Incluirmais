@@ -1,5 +1,5 @@
 import Home1 from './Components/navbar/page'
-import ConfigPerfil from './Components/configperfil/page';
+import ConfigPerfil from './Components/Configperfil/page';
 import Style from './page.module.css';
 
 export default function Home() {

@@ -6,6 +6,7 @@
     border-radius: 38px;
     display: flex;
     height: calc(100vh - 40px);
+    margin-top: 1vh;
 }
 
 .container{
@@ -15,6 +16,11 @@
     border-radius: 38px;
     flex-direction: column;
     padding: 10px;
+    overflow: auto;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
 }
 
 .conteudo{
@@ -46,7 +52,7 @@
 }
 
 .imgPerfil{
-    margin: 0px;
+    margin-top: 10px;
 }
 
 .configbutao{
@@ -60,6 +66,19 @@
     font-size: 20px;
     background-color: #737782;
     margin-top: 10px;
+    transition: .1s;
+}
+
+.configbutao:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.configbutao:active{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
 }
 
 .configbutao1{
@@ -76,10 +95,18 @@
     font-size: 20px;
     background-color: #b6b8c086;
     margin-top: 4%;
+    text-align: left;
 }
 
 .configbutao1:hover{
     background-color: #4c4e53a2;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 15px rgba(0, 0,0,.3);
+}
+
+.configbutao1:active{
+    background-color: #4c4e53ef;
     color: white;
     cursor: pointer;
     box-shadow: 0px 2px 15px rgba(0, 0,0,.3);
@@ -94,4 +121,19 @@
 
 .navBarBtns{
     text-decoration: none;
+}
+
+.sairConta1{
+    color: black;
+    font-weight: 800;
+    background: none;
+    outline: none;
+}
+
+.sairConta1:hover{
+    text-shadow: 0px 0px 10px rgba(0, 0,0,.3);
+}
+
+.configbutao1:hover .navImgs{
+    filter: invert();
 }

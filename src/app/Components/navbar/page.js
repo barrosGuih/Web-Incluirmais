@@ -51,6 +51,10 @@ export default function Home() {
             Tarefas
             </button>
           </Link>
+          
+          <Link className={style.sairConta1} href={"./Components/chatPage"}>
+            Sair da conta
+          </Link>
         </div>
       </div>
     );
