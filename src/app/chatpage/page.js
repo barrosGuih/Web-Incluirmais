@@ -3,11 +3,11 @@ import Style from './page.module.css';
 export default function chatPage() {
   return (
     <div className={Style.container}>
-      <div className={Style.boxperfil}>
-
-        <div className={Style.ajustes}>
+      <div className={Style.boxperfil_bground1}>
+        <div className={Style.boxperfil}>
+          <div className={Style.ajustes}>
+          </div>
         </div>
-
       </div>
     </div>
   );

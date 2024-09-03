@@ -14,12 +14,13 @@ export default function ConfigPerfil() {
             ></Image>
             <h1 className={Style.hello}>Bem Vindo, Sicrano!</h1>
           </div>
-
+          <h1 className={Style.configname}>Configurações da conta:</h1>
           <div className={Style.botoesDiv}>
-            <h1 className={Style.configname}>Configurações da conta:</h1>
             <button className={Style.botaoconfig}>Editar nome de usuário</button>
             <button className={Style.botaoconfig}>Editar tipo de usuário</button>
+            <span className={Style.lineBreak1}></span>
             <button className={Style.botaoconfig}>Configurações de privacidade</button>
+            <span className={Style.lineBreak1}></span>
             <button className={Style.botaoconfig}>Mudar de conta</button>
             <button className={Style.botaoconfig1}>Excluir conta</button>
           </div>
