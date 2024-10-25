@@ -3,8 +3,8 @@
 
 
 .container{
-    width: 70vw;
-    height: calc(100vh - 40px);
+    width: calc(100vw - 30px);
+    height: calc(100vh - 20px);
     background-color: rgba(255, 255, 255, 0.842);
     position: relative;
     border-radius: 38px;
@@ -12,18 +12,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin: 0%  0.3%;
 }
 
 .img {
     width: 40%;
-    max-width: 150px;
+    max-width: 10%;
     object-fit: contain;
 }
 
 .boxperfil_bground1{
-    width: 95%;
-    height: 95%;
+    width: 97%;
+    height: 96%;
     background-color: rgba(128, 128, 128, 0.171);
     border-radius: 38px;
     display: flex;
@@ -32,13 +32,18 @@
 }
 
 .boxperfil{
-    width: 95%;
-    height: 95%;
+    width: 97%;
+    height: 96%;
     background-color: #ffffffe0;
     border-radius: 38px;
     display: flex;
     flex-direction: column;
+    overflow: auto;
     align-items: center;
+}
+
+.boxperfil::-webkit-scrollbar{
+    display: none;
 }
 
 .ajustes{
@@ -51,18 +56,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .hello{
     color: black;
-    background-color: rgba(105, 115, 148, 0.356);
+    background-color: #D1D1D1;
     text-align: center;
     border-radius: 50px;
     font-family: 'Inter';
-    font-size: 200%;
+    font-size: 150%;
     margin: 0;
-    margin-top: 1.5%;
+    margin-top: 1%;
     padding: 1% 5%;
+    font-weight: bold;
+}
+
+.information{
+    text-align:center;
+    width: 28%;
+    font-size: 150%;
+    font-style: normal;
+    text-indent: 2em;
+
 }
 
 .perfil{
@@ -70,56 +86,35 @@
 
 }
 
-.botoesDiv {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-}
-
-.botaoconfig{
-    height: 55px;
-    width: 100%;
-    margin-bottom: 20px;
-    font-family: 'DM Sans';
-    background-color: rgba(224, 224, 224, 0.562);
-    border-radius: 38px;
-    border: none;
-    font-weight: bold;
-    font-size: 20px;
-    transition-duration: .05s;
-}
-
-.botaoconfig:hover{
-    background-color: rgba(0, 0, 0, 0.507);
-    color: white;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-.botaoconfig1{
-    height: 55px;
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 38px;
-    border: none;
-    font-family: 'DM Sans';
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    background-color: red;
-    transition-duration: .05s;
-}
-
-.botaoconfig1:hover{
-    color: red;
-    background-color: white;
-    border: 2px solid red;
-    box-shadow: 0px 1px 10px rgba(255, 0, 0, 0.2);
-    cursor: pointer;
-}
 
 .configname{
     font-size: 29px;
     font-weight: bold;
     text-align: center;
+}
+
+.botooes{
+    display:inline-flex;
+}
+
+.botaohome{
+    height: auto;
+    background-color: #DEE0EC;
+    display:inline-flex;
+    margin: 2% 180px;
+    border: none;
+    width: 20vw;
+    height: 70%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 150%;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    
+}
+.botaohome:hover{
+    background-color: #aaabb1;
+    color: white;
 }

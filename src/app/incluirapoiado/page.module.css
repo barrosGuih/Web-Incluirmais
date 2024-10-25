@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.container{
+    width: calc(100vw - 30px);
+    height: calc(100vh - 20px);
+    background-color: rgba(255, 255, 255, 0.842);
+    position: relative;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%  0.3%;
+}
+
+.boxperfil_bground1{
+    width: 97%;
+    height: 96%;
+    background-color: rgba(128, 128, 128, 0.253);
+    border-radius: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo{
+    text-align: center;
+}
+
+
+.logocontainer{
+    width: 50vw;
+    height: 15vh;
+    margin: 4% 0;
+    background-color: #ffffff7c;
+    border-radius: 38px;
+    text-align: center;
+}
+
+.texto1{
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'DM Sans';
+}
