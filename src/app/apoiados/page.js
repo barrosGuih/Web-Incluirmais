@@ -12,12 +12,12 @@ export default function HomeInicial() {
           <div className={Style.contaitumpla}>
 
           </div>
-          <div className={Style.tuplas}>
+          <Link href={'./aluno'} className={Style.tuplas}>
           <h1>Pedro Henrique Curvelo</h1>
             <Image/>
             
 
-          </div>
+        </Link>
           <div className={Style.botoessecun}>
             <Link href={'./incluirapoiado'}><button className={Style.butterc}>Incluir novo apoiado</button></Link>
             <Link href={'./homeInicial'}><button className={Style.butterc}>Voltar ao inicio</button></Link>
