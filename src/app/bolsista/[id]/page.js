@@ -17,7 +17,9 @@ export default async ({ params }) => {
                 <div className={Style.conteudo}>
                   <h3 className={Style.name1}>Matrícula: {bolsista.matricula}</h3>
                   <h3 className={Style.name1}>Turma: {bolsista.turma || "zzz"}</h3>
-                  <button className={Style.botaoadicionar}>Adicionar apoiador</button>
+                  <Link href={"./apoiadores"}>
+                <button className={Style.botaoadicionar}>Adicionar apoiador</button>
+                </Link>
                 </div>
 
                 
@@ -31,6 +33,12 @@ export default async ({ params }) => {
                 </div>
 
                 <div className={Style.perfilaluno3}>
+                <button className={Style.funcaoaluno}>Ver relatórios Quinzenais</button>
+                <button className={Style.funcaoaluno}>Realizar Relatórios Sobre o Aluno</button>
+                <Link href={`/agenda/${params.id}`}>
+                <button className={Style.funcaoaluno}>Agenda</button>
+                </Link>
+            
                 </div>
             
               </div>

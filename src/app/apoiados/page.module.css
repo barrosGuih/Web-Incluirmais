@@ -69,23 +69,3 @@
     background-color: #4d4b4b;
     color: white;
 }
-
-.containtupla{
-    
-}
-
-.tuplas{
-    width: 60vw;
-    height: 10%;
-    background-color: #FFFFFF;
-    border: solid 2px black;
-    border-radius: 35px;
-    margin: 2% 0;
-    text-align: center;
-    box-shadow: 3px 3px 3px 3px rgb(110, 110, 110);
-    cursor: pointer;
-}
-.tuplas:hover{
-    background-color: #a4a4aa;
-    color: white;
-}
