@@ -1,11 +1,10 @@
 import Style from './page.module.css';
-import Image from 'next/image';
 import Link from 'next/link';
 import { getAlunosById } from '../../../lib/autchat';
+import Image from 'next/image';
 
 export default async ({ params }) => {
   const bolsista = await getAlunosById(params.id);
-  
   return (
     <div className={Style.container}>
       <div className={Style.boxperfil_bground1}>
