@@ -1,5 +1,5 @@
 import Style from './page.module.css';
-import { getAlunosById } from '../../.././lib/autchat';
+import { getAlunosById } from '../../../lib/apoiados';
 import Link from 'next/link';
 
 export default async ({ params }) => {

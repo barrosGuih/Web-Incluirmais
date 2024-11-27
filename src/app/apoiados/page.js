@@ -5,7 +5,7 @@ import Link from 'next/link';
 import  db  from '@/lib/db';
 
 export default async ({ params }) => {
-  const alunos = await db.query("select * from usuarios");
+  const alunos = await db.query("select * from apoiado");
 
   return (
     <div className={Style.container}>
@@ -15,7 +15,7 @@ export default async ({ params }) => {
         {/*tupla*/}
           <div className={Style.tupla1}>
             {alunos.rows.map(a => 
-            <Link  href={"/bolsista/" + a.id} className={Style.tuplas}> 
+            <Link  href={"/perfilApoiado/" + a.id} className={Style.tuplas}> 
             <div className={Style.tupla}>
                 <div className={Style.divdotexto}><div><h1 className={Style.nomee}> {a.nome}</h1> <h3 className={Style.info}>data nasc: {a.data_nasc}ㅤㅤㅤTurma: {a.turma}</h3> </div></div>
             </div>

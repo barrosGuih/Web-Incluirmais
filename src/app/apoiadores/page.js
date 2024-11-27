@@ -2,32 +2,36 @@ import Style from './page.module.css';
 import Perfil from './imgs/profile1.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import  db  from '@/lib/db';
 
-export default function HomeInicial() {
+export default async ({ params }) => {
+  const alunos = await db.query("select * from apoiador");
+
   return (
     <div className={Style.container}>
       <div className={Style.boxperfil_bground1}>
         <div className={Style.boxperfil}>
-          <div className={Style.ajustes}>
-            <Image
-              src={Perfil}
-              className={Style.img}
-            ></Image>
-            <h1 className={Style.hello}>Bem Vindo, Sicrano!</h1>
-          </div>
-          <h1 className={Style.configname}>Seja bem vindo ao INCLUIR+</h1>
-          <h3 className={Style.information}>Aqui você encontrará facilidade de acesso
-às ajudas psicopedagogas, onde você
-encontrará alunos apoiadores, aprovados
-pelo sistema de aluno apoiador, para auxiliar
-seus problemas durante as aulas.
 
-Começe a fazer umas pesquisas para saber
-qual o seu aluno apoiador de hoje!</h3>
-        <div className={Style.botooes}>
-        <Link href={"./apoiadores"}><button className={Style.botaohome}>Apoiadores</button></Link>
-        <Link href={"./apoiados"}><button className={Style.botaohome}>Apoiados</button></Link>
-        </div>
+        {/*tupla*/}
+          <div className={Style.tupla1}>
+            {alunos.rows.map(a => 
+            <Link  href={"/perfilApoiador/" + a.id} className={Style.tuplas}> 
+            <div className={Style.tupla}>
+                <div className={Style.divdotexto}><div><h1 className={Style.nomee}> {a.nome}</h1> <h3 className={Style.info}>data nasc: {a.data_nasc}ㅤㅤㅤTurma: {a.turma}</h3> </div></div>
+            </div>
+            </Link>
+            )}
+          </div>
+        {/*tupla*/}
+
+          <div className={Style.botoessecun}>
+            <Link href={'./incluirapoiado'}><button className={Style.butterc}>Incluir novo apoiador</button></Link>
+            <Link href={'./homeInicial'}><button className={Style.butterc}>Voltar ao inicio</button></Link>
+
+          
+          </div>
+          
+        
           
         </div>
       </div>

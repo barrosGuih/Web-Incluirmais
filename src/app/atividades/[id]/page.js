@@ -1,5 +1,5 @@
 import Style from './page.module.css';
-import { getAlunosById } from '../../../lib/autchat';
+import { getAlunosById } from '../../../lib/apoiados';
 
 export default async ({ params }) => {
   const bolsista = await getAlunosById(params.id);

@@ -1,6 +1,6 @@
 import Style from './page.module.css';
 import Link from 'next/link';
-import { getAlunosById } from '../../../lib/autchat';
+import { getAlunosById } from '../../../lib/apoiados';
 import Image from 'next/image';
 
 export default async ({ params }) => {
