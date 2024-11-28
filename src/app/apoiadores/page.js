@@ -17,8 +17,22 @@ export default async ({ params }) => {
             {alunos.rows.map(a => 
             <Link  href={"/perfilApoiador/" + a.id} className={Style.tuplas}> 
             <div className={Style.tupla}>
-                <div className={Style.divdotexto}><div><h1 className={Style.nomee}> {a.nome}</h1> <h3 className={Style.info}>data nasc: {a.data_nasc}ㅤㅤㅤTurma: {a.turma}</h3> </div></div>
-            </div>
+                  <div className={Style.divdotexto}>
+                    <div className={Style.tamanhotexto}>
+                    <h1 className={Style.nomee}>{a.nome}</h1> 
+                    </div>
+                    <h3 className={Style.info}>data nasc: {a.data_nasc}ㅤㅤㅤTurma: {a.turma}</h3> 
+                    <Image className={Style.fotoperfil}
+                          src={a.foto} 
+                          width={10} 
+                          height={10}>
+                        </Image>
+                      <div>
+                        
+                      </div>
+                        
+                  </div>    
+                </div>
             </Link>
             )}
           </div>

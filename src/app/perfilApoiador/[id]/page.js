@@ -12,16 +12,16 @@ export default async ({ params }) => {
           <Image></Image>
           <h1 className={Style.name}>{bolsista.nome}</h1>
 
-            <div className={Style.perfilalunobottom}>
                 <div className={Style.conteudo}>
-                  <h3 className={Style.name1}>Matrícula: {bolsista.matricula}</h3>
-                  <h3 className={Style.name1}>Turma: {bolsista.turma || "zzz"}</h3>
+                  <Image className={Style.fotoperfil}
+                  src={bolsista.foto} 
+                  width={1} 
+                  height={1}></Image>
+                    <h3 className={Style.name1}>Matrícula: {bolsista.matricula}</h3>
+                    <h3 className={Style.name1}>Turma: {bolsista.turma || "zzz"}</h3>
                   <Link href={"../apoiados"}>
                 <button className={Style.botaoadicionar}>Adicionar apoiado</button>
                 </Link>
-                </div>
-
-                
             </div>
             
         </div>

@@ -75,7 +75,6 @@
 }
 
 .name1{
-    margin-left: 4%;
     margin-right: 4%;
     display: flex;
     flex-direction: row;
@@ -137,4 +136,13 @@
 }
 .funcaoaluno:hover{
     border: 1px solid black;
+}
+
+.fotoperfil{
+    width: 25%;
+    height: 28vh;
+    position: relative;
+    bottom: 49%;
+    right: 15%;
+    border-radius: 100%;
 }
