@@ -5,3 +5,4 @@ Projeto Integrador:
   - Ligação com Banco de Dados
   - Alteração em pilares que já estavam prontos
   - inclusão de Tuplas com o banco
+  - Inclusão de Arquivos de imagens no banco de dados
