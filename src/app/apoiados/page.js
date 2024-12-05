@@ -6,6 +6,8 @@ import  db  from '@/lib/db';
 
 export default async ({ params }) => {
   const alunos = await db.query("select * from apoiado");
+  const alunosFormatados = alunos.rows.map(a => ({ ...a, data_nasc: new Date(a.data_nasc).toLocaleDateString('pt-BR')
+  }));
 
   return (
     <div className={Style.container}>
@@ -14,7 +16,7 @@ export default async ({ params }) => {
 
         {/*tupla*/}
           <div className={Style.tupla1}>
-            {alunos.rows.map(a => 
+            {alunosFormatados.map(a => 
             <Link  href={"/perfilApoiado/" + a.id} className={Style.tuplas}> 
             <div className={Style.tupla}>
                 <div className={Style.divdotexto}><div><h1 className={Style.nomee}> {a.nome}</h1> <h3 className={Style.info}>data nasc: {a.data_nasc}ㅤㅤㅤTurma: {a.turma}</h3> </div></div>
