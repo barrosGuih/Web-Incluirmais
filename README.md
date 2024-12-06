@@ -6,3 +6,4 @@ Projeto Integrador:
   - Alteração em pilares que já estavam prontos
   - inclusão de Tuplas com o banco
   - Inclusão de Arquivos de imagens no banco de dados
+  - Inclusão de cadastrar informações no frontend e sair no banco de dados;
