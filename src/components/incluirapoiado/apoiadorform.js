@@ -1,11 +1,7 @@
 "use client"
 import { useState } from 'react'
 import Style from './style.css'
-import Link from 'next/link';
-
-function Cadastrado (){
-  alert("Aluno cadastrado");
-}
+import Link from 'next/link'
 
 export default function AlunoForm({ onAddAluno }) {
 const [nome, setnome] = useState('')
@@ -33,7 +29,6 @@ const handleSubmit = (e) => {
             <div className={Style.containerforms}>
           <label className={Style.laforms}>Nome:</label>
             <input className={Style.forms} 
-            required
             type='text'
             value={nome}
             onChange={(e) => setnome(e.target.value)}></input>
@@ -42,7 +37,6 @@ const handleSubmit = (e) => {
           <div className={Style.containerforms}>
           <label className={Style.laforms}>Matrícula:</label>
             <input className={Style.forms} 
-            required
             type='text'
             value={matricula}
             onChange={(e) => setmatricula(e.target.value)}></input>
@@ -50,7 +44,7 @@ const handleSubmit = (e) => {
 
           <div className={Style.containerforms}>
           <label className={Style.laforms}>Data de nascimento: </label>
-            <input required className={Style.forms} 
+            <input className={Style.forms} 
             type='date'
             value={data_nasc}
             onChange={(e) => setdata_nasc(e.target.value)}></input>
@@ -59,7 +53,6 @@ const handleSubmit = (e) => {
           <div className={Style.containerforms}>
           <label className={Style.laforms}>Turma:</label>
             <input className={Style.forms } 
-            required
             type='text'
             value={turma}
             onChange={(e) => setturma(e.target.value)}></input>
@@ -70,12 +63,11 @@ const handleSubmit = (e) => {
             <input className={Style.forms}
             type='text'
             value={descricao}
-            onChange={(e) => setdescricao(e.target.value)}
-            required></input>
+            onChange={(e) => setdescricao(e.target.value)}></input>
           </div>
 
           <div className={Style.enviardiv}>
-          <Link href={'./apoiadoincluido'}><button className={Style.enviar} type='submit' placeholder='Incluir Apoiado'>Cadastrar Apoiado</button></Link>
+          <Link href={'./apoiadorincluido'}><button className={Style.enviar}type='submit' placeholder='Incluir Apoiado'>Cadastrar Apoiador</button></Link>
           </div>
         </div>
         </form>

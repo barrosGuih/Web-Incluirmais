@@ -3,7 +3,7 @@ import Style from './page.module.css';
 import Image from 'next/image';
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
-import ApoiadoForm from '../../components/incluirapoiado/apoiadorform'
+import ApoiadorForm from '../../components/incluirapoiado/apoiadorform'
 import Incluir from './imgs/incluir.png'
 
 export default function HomeInicial() {
@@ -14,7 +14,7 @@ export default function HomeInicial() {
   }, [])
 
   const fetchAlunos = async () => {
-    const response = await fetch('/api/alunos')
+    const response = await fetch('/api/apoiador')
     if(response.ok){
       const data = await response.json()
     setAlunos(data)
@@ -25,7 +25,7 @@ export default function HomeInicial() {
   }
 
   const addAluno = async (aluno) => {
-    const response = await fetch('/api/alunos', {
+    const response = await fetch('/api/apoiador', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -41,11 +41,11 @@ export default function HomeInicial() {
     <div className={Style.container}>
       <div className={Style.boxperfil_bground1}>
         <div className={Style.conteudo}>
-        <Link href={"./homeInicial"}><div className={Style.logocontainer}>
+          <Link href={"./homeInicial"}><div className={Style.logocontainer}>
             <Image className={Style.Logo} src={Incluir}/>
           </div></Link>
-          <h1 className={Style.texto1}>Incluir Aluno Apoiado</h1>
-          <ApoiadoForm onAddAluno={addAluno}></ApoiadoForm>
+          <h1 className={Style.texto1}>Incluir Aluno Apoiador</h1>
+          <ApoiadorForm onAddAluno={addAluno}></ApoiadorForm>
         </div>
       </div>
     </div>

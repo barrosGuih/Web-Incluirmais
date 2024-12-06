@@ -39,7 +39,7 @@ export default async ({ params }) => {
         {/*tupla*/}
 
           <div className={Style.botoessecun}>
-            <Link href={'./incluirapoiado'}><button className={Style.butterc}>Incluir novo apoiador</button></Link>
+            <Link href={'./incluirapoiador'}><button className={Style.butterc}>Incluir novo apoiador</button></Link>
             <Link href={'./homeInicial'}><button className={Style.butterc}>Voltar ao inicio</button></Link>
 
           
