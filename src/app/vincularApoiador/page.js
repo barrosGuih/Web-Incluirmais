@@ -15,7 +15,7 @@ export default async ({ params }) => {
         {/*tupla*/}
           <div className={Style.tupla1}>
             {alunos.rows.map(a => 
-            <Link  href={"/perfilApoiador/" + a.id} className={Style.tuplas}> 
+           // <Link  href={"/perfilApoiador/" + a.id} className={Style.tuplas}> 
             <div className={Style.tupla}>
                   <div className={Style.divdotexto}>
                     <div className={Style.tamanhotexto}>
@@ -29,7 +29,6 @@ export default async ({ params }) => {
                         
                   </div>    
                 </div>
-            </Link>
             )}
           </div>
         {/*tupla*/}

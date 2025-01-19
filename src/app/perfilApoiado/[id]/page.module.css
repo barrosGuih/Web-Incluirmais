@@ -138,3 +138,27 @@
 .funcaoaluno:hover{
     border: 1px solid black;
 }
+
+  .estilodadiv {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    margin-top: 10px;
+  }
+  
+  .bodyy{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgb(0,178,255);
+    background: linear-gradient(180deg, rgba(0,178,255,1) 0%, rgba(131,72,255,1) 100%);
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border-radius: 38px;
+    font-family: 'DM Sans';
+}

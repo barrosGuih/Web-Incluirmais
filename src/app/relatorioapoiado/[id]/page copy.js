@@ -1,6 +1,7 @@
+/*
 import Style from './page.module.css';
 import Link from 'next/link';
-import { getAlunosById } from '../../../lib/apoiadores';
+import { getAlunosById } from '../../../lib/apoiados';
 import Image from 'next/image';
 
 export default async ({ params }) => {
@@ -12,12 +13,16 @@ export default async ({ params }) => {
           <Image></Image>
           <h1 className={Style.name}>{bolsista.nome}</h1>
 
+            <div className={Style.perfilalunobottom}>
                 <div className={Style.conteudo}>
-                    <h3 className={Style.name1}>Matrícula: {bolsista.matricula}</h3>
-                    <h3 className={Style.name1}>Turma: {bolsista.turma || "zzz"}</h3>
-                  <Link href={"vincularApoiador"}>
-                <button className={Style.botaoadicionar}>Adicionar apoiado</button>
+                  <h3 className={Style.name1}>Matrícula: {bolsista.matricula}</h3>
+                  <h3 className={Style.name1}>Turma: {bolsista.turma || "zzz"}</h3>
+                  <Link href={".././vincularApoiador"}>
+                <button className={Style.botaoadicionar}>Adicionar apoiador</button>
                 </Link>
+                </div>
+
+                
             </div>
             
         </div>
@@ -28,8 +33,10 @@ export default async ({ params }) => {
                 </div>
 
                 <div className={Style.perfilaluno3}>
-                <Link href={'./apoiador'}>
-                <button className={Style.funcaoaluno}>Ver relatórios Quinzenais entregues</button>
+                <button className={Style.funcaoaluno}>Ver relatórios Quinzenais</button>
+                <button className={Style.funcaoaluno}>Realizar Relatórios Sobre o Aluno</button>
+                <Link href={`/agenda/${params.id}`}>
+                <button className={Style.funcaoaluno}>Agenda</button>
                 </Link>
             
                 </div>
@@ -40,3 +47,4 @@ export default async ({ params }) => {
     </div>
   );
 }
+*/

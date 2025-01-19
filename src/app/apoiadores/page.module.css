@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-.container{
+.container {
     width: calc(100vw - 30px);
     height: calc(100vh - 20px);
     background-color: rgba(255, 255, 255, 0.842);
@@ -12,10 +11,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0%  0.3%;
+    margin: 0 0.3%;
 }
 
-.botoessecun{
+.botoessecun {
     width: 26vw;
     height: 90vh;
     display: flex;
@@ -23,11 +22,9 @@
     position: absolute;
     margin-left: 95%;
     align-items: center;
-    
 }
 
-
-.boxperfil_bground1{
+.boxperfil_bground1 {
     width: 97%;
     height: 96%;
     background-color: rgba(128, 128, 128, 0.171);
@@ -36,7 +33,7 @@
     align-items: center;
 }
 
-.boxperfil{
+.boxperfil {
     width: 70%;
     margin-left: 1.3%;
     height: 96%;
@@ -48,11 +45,11 @@
     align-items: center;
 }
 
-.boxperfil::-webkit-scrollbar{
+.boxperfil::-webkit-scrollbar {
     display: none;
 }
 
-.butterc{
+.butterc {
     flex-direction: column;
     width: 15vw;
     height: 8vh;
@@ -65,12 +62,13 @@
     box-shadow: 5px 5px 5px 5px black;
     cursor: pointer;
 }
-.butterc:hover{
+
+.butterc:hover {
     background-color: #4d4b4b;
     color: white;
 }
 
-.tupla{
+.tupla {
     width: 63vw;
     height: 9vh;
     background-color: #ffffff;
@@ -84,35 +82,35 @@
     border: 3px solid rgba(0, 0, 0, 0.205);
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.212);
     align-items: center;
-
 }
 
-.nomee{
+.nomee {
     color: black;
-    text-decoration:solid white;
+    text-decoration: solid white;
     text-decoration: none;
     margin-bottom: 0.5%;
-    font-size: 200%;}
+    font-size: 200%;
+}
 
-.tuplas{
+.tuplas {
     text-decoration: none;
 }
 
-.divdotexto{
+.divdotexto {
     display: flex;
     flex-direction: column;
     position: relative;
     margin-bottom: 20%;
 }
 
-.info{
+.info {
     color: black;
     text-decoration: none;
     font-size: 0.7vw;
     text-align: center;
 }
 
-.fotoperfil{
+.fotoperfil {
     width: 19%;
     height: 10vh;
     position: relative;
@@ -121,8 +119,179 @@
     bottom: 55%;
 }
 
-.tamanhotexto{
+.tamanhotexto {
     width: 35vw;
     height: 6vh;
     justify-items: center;
+}
+
+/* Responsividade para dispositivos menores que 1366px (notebooks e desktops menores) */
+@media (max-width: 1366px) {
+  .butoessecun {
+    width: 25vw;
+    margin-left: 90%;
+  }
+
+  .boxperfil {
+    width: 65%;
+    margin-left: 1%;
+  }
+
+  .butterc {
+    width: 14vw;
+    height: 7vh;
+    font-size: 140%;
+  }
+
+  .tupla {
+    width: 60vw;
+    height: 8vh;
+    padding: 0.8%;
+  }
+
+  .nomee {
+    font-size: 160%;
+  }
+
+  .info {
+    font-size: 1vw;
+  }
+
+  .fotoperfil {
+    width: 18%;
+    height: 9vh;
+  }
+
+  .tamanhotexto {
+    width: 38vw;
+    height: 4vh;
+    justify-items: center;
+}
+}
+
+/* Responsividade para dispositivos menores que 1200px (laptops e desktops menores) */
+@media (max-width: 1200px) {
+  .butoessecun {
+    width: 24vw;
+    margin-left: 88%;
+  }
+
+  .boxperfil {
+    width: 60%;
+    margin-left: 1%;
+  }
+
+  .butterc {
+    width: 13vw;
+    height: 6vh;
+    font-size: 130%;
+  }
+
+  .tupla {
+    width: 58vw;
+    height: 7vh;
+    padding: 0.7%;
+  }
+
+  .nomee {
+    font-size: 160%;
+  }
+
+  .info {
+    font-size: 0.9vw;
+  }
+
+  .fotoperfil {
+    width: 17%;
+    height: 8vh;
+  }
+}
+
+/* Responsividade para dispositivos menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .botoessecun {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .boxperfil_bground1 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .boxperfil {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .butterc {
+    width: 30%;
+    height: auto;
+    margin: 5% 0;
+    font-size: 1.2rem;
+  }
+
+  .tupla {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .nomee {
+    font-size: 1.5rem;
+  }
+
+  .info {
+    font-size: 1.2rem;
+  }
+
+  .fotoperfil {
+    width: 20%;
+    height: auto;
+    position: static;
+  }
+}
+
+/* Ajuste adicional para dispositivos menores que 480px (smartphones) */
+@media (max-width: 480px) {
+  .butterc {
+    width: 25%;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  .tupla {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .nomee {
+    font-size: 1.2rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .fotoperfil {
+    width: 25%;
+    height: auto;
+    position: static;
+  }
 }
