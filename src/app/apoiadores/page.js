@@ -1,11 +1,22 @@
+'use client';
 import Style from './page.module.css';
 import Perfil from './imgs/profile1.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import  db  from '@/lib/db';
+import { useEffect, useState } from 'react';
 
-export default async ({ params }) => {
-  const alunos = await db.query("select * from apoiador");
+export default function Apoiadores({ params }) {
+  const [alunos, setAlunos] = useState([]);
+
+  const fetchAlunos = async () => {
+    const res = await fetch('/api/apoiador');
+    const data = await res.json();
+    setAlunos(data);
+  }
+
+  useEffect(() => {
+    fetchAlunos();
+  }, []);
 
   return (
     <div className={Style.container}>
@@ -14,7 +25,7 @@ export default async ({ params }) => {
 
         {/*tupla*/}
           <div className={Style.tupla1}>
-            {alunos.rows.map(a => 
+            {alunos.map(a => 
             <Link  href={"/perfilApoiador/" + a.id} className={Style.tuplas}> 
             <div className={Style.tupla}>
                   <div className={Style.divdotexto}>
