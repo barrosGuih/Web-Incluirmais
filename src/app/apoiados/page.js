@@ -1,14 +1,23 @@
+'use client'
 import Style from './page.module.css';
 import Perfil from './imgs/profile1.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import  db  from '@/lib/db';
+import { useEffect, useState } from 'react';
 
-export default async ({ params }) => {
-  const alunos = await db.query("select * from apoiado");
-  const alunosFormatados = alunos.rows.map(a => ({ ...a, data_nasc: new Date(a.data_nasc).toLocaleDateString('pt-BR')
-  }));
-
+export default function Apoiados ({ params }) {
+  const [alunos, setAlunos] = useState([]);
+  
+    const fetchAlunos = async () => {
+      const res = await fetch('/api/alunos');
+      const data = await res.json();
+      setAlunos(data);
+    }
+  
+    useEffect(() => {
+      fetchAlunos();
+    }, []);
+  
   return (
     <div className={Style.container}>
       <div className={Style.boxperfil_bground1}>
@@ -16,7 +25,7 @@ export default async ({ params }) => {
 
         {/*tupla*/}
           <div className={Style.tupla1}>
-            {alunosFormatados.map(a => 
+            {alunos.map(a => 
             <Link  href={"/perfilApoiado/" + a.id} className={Style.tuplas}> 
             <div className={Style.tupla}>
                 <div className={Style.divdotexto}><div><h1 className={Style.nomee}> {a.nome}</h1> <h3 className={Style.info}>data nasc: {a.data_nasc}ㅤㅤㅤTurma: {a.turma}</h3> </div></div>

@@ -1,11 +1,14 @@
+import pool from "@/lib/db";
 import { getAlunosById } from '../../../../lib/apoiados';
 
 export async function GET(req, { params }) {
   const { id } = params;
   try {
-    const aluno = await getAlunosById(id);
+    const client = await pool.connect();
+    const result = await client.query('SELECT * FROM aluno WHERE id = $1', [id]);
+    client.release();
     if (aluno) {
-      return new Response(JSON.stringify(aluno), { status: 200 });
+      return new Response(result.rows[0], { status: 200 });
     } else {
       return new Response(JSON.stringify({ message: 'Aluno não encontrado' }), { status: 404 });
     }

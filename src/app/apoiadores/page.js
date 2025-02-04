@@ -28,6 +28,7 @@ export default function Apoiadores({ params }) {
             {alunos.map(a => 
             <Link  href={"/perfilApoiador/" + a.id} className={Style.tuplas}> 
             <div className={Style.tupla}>
+              
                   <div className={Style.divdotexto}>
                     <div className={Style.tamanhotexto}>
                     <h1 className={Style.nomee}>{a.nome}</h1> 
