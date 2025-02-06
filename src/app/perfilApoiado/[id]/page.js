@@ -31,7 +31,7 @@ const AlunoPage = () => {
   }, [id]);
 
   if (error) {
-    return <div>Erro: {error}</div>;
+    return <div>Erro:: {error}</div>;
   }
 
   if (!bolsista) {
