@@ -25,8 +25,8 @@ seus problemas durante as aulas.
 Começe a fazer umas pesquisas para saber
 qual o seu aluno apoiador de hoje!</h3>
         <div className={Style.botooes}>
-            <Link href={"./apoiadores"}><button className={Style.botaohome}>Apoiadores</button></Link>
-            <Link href={"./apoiados"}><button className={Style.botaohome}>Apoiados</button></Link>
+            <Link className={Style.botaohome} href={"./apoiadores"}><button className={Style.botaohome}>Apoiadores</button></Link>
+            <Link className={Style.botaohome1} href={"./apoiados"}><button className={Style.botaohome1}>Apoiados</button></Link>
         </div>
           
         </div>

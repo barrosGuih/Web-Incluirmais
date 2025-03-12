@@ -108,26 +108,46 @@
 
 .botooes {
     display: inline-flex;
+    gap: 10px;
+    
+    
 }
 
 .botaohome {
-    height: auto;
     background-color: #DEE0EC;
     display: inline-flex; 
     border: none;
     width: 20vw;
-    height: 70%;
     border-radius: 12px;
-    font-size: 150%;
+    font-size: 125%;
+    justify-content: space-around;
     font-weight: bold;
     cursor: pointer;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; 
+    text-decoration: none;
+}
+
+
+.botaohome1 {
+  background-color: #DEE0EC;
+  border: none;
+  width: 20vw;
+  border-radius: 12px;
+  font-size: 125%;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
 }
 
 .botaohome:hover {
     background-color: #aaabb1;
     color: white;
+}
+
+.botaohome1:hover {
+  background-color: #aaabb1;
+  color: white;
 }
 
 /* Responsividade para dispositivos menores que 1366px (notebooks e desktops menores) */
@@ -146,6 +166,11 @@
   }
 
   .botaohome {
+    font-size: 1.2rem;
+    width: 85%;
+  }
+
+  .botaohome1 {
     font-size: 1.2rem;
     width: 85%;
   }
@@ -173,11 +198,26 @@
     display: inline-flex;
     border: none;
     width: 20vw;
-    height: 70%;
     text-align: center;
     justify-content: center;
     border-radius: 12px;
-    font-size: 150%;
+    font-size: 125%;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .botaohome1 {
+    font-size: 1.2rem;
+    height: auto;
+    background-color: #DEE0EC;
+    display: inline-flex;
+    border: none;
+    width: 20vw;
+    text-align: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 125%;
     font-weight: bold;
     cursor: pointer;
     align-items: center;
@@ -200,6 +240,11 @@
   }
 
   .botaohome {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+
+  .botaohome1 {
     font-size: 1.3rem;
     width: 90%;
   }
@@ -265,6 +310,12 @@
     margin: 10px 0;
     font-size: 1.2rem;
   }
+
+  .botaohome1 {
+    width: 80%;
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
 }
 
 /* Ajuste adicional para dispositivos menores que 480px (smartphones) */
@@ -284,6 +335,11 @@
   }
 
   .botaohome {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .botaohome1 {
     font-size: 1rem;
     width: 90%;
   }

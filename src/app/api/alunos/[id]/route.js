@@ -1,14 +1,16 @@
 import pool from "@/lib/db";
-import { getAlunosById } from '../../../../lib/apoiados';
 
 export async function GET(req, { params }) {
   const { id } = params;
   try {
     const client = await pool.connect();
+    // Realizando a consulta ao banco de dados com o ID
     const result = await client.query('SELECT * FROM apoiado WHERE id = $1', [id]);
     client.release();
-    if (aluno) {
-      return new Response(result.rows[0], { status: 200 });
+
+    // Verificando se algum registro foi encontrado
+    if (result.rows.length > 0) {
+      return new Response(JSON.stringify(result.rows[0]), { status: 200 });
     } else {
       return new Response(JSON.stringify({ message: 'apoiado não encontrado' }), { status: 404 });
     }
