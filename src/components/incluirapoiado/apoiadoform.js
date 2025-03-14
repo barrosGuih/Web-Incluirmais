@@ -77,7 +77,7 @@ export default function AlunoForm({ onAddAluno }) {
       </div>
 
       <div className={styles.enviardiv}>
-        <button className={styles.enviar} type='submit'>Cadastrar Apoiador</button>
+        <button className={styles.enviar} type='submit'>Cadastrar Apoiado</button>
       </div>
     </form>
   );

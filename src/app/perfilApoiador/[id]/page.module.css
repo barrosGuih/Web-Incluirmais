@@ -51,6 +51,7 @@
     text-align: justify;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-left: 4%;
     
     
 }
@@ -139,10 +140,10 @@
 }
 
 .fotoperfil{
-    width: 25%;
-    height: 28vh;
+    width: 10%;
+    height: 40vh;
     position: relative;
-    bottom: 49%;
-    right: 15%;
+    bottom: 65%;
+    right: 35%;
     border-radius: 100%;
 }

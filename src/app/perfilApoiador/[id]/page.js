@@ -19,7 +19,11 @@ export default async ({ params }) => {
                 <button className={Style.botaoadicionar}>Adicionar apoiado</button>
                 </Link>
             </div>
-            
+            <Image className={Style.fotoperfil}
+                  src={bolsista.foto} 
+                  width={200} 
+                  height={200}>
+            </Image>
         </div>
         <h1 className={Style.detalhes}>Detalhes sobre o aluno:</h1>
               <div className={Style.containerperfil}>
@@ -33,6 +37,11 @@ export default async ({ params }) => {
                 </Link>
             
                 </div>
+                <Image className={Style.fotoperfil}
+                  src={bolsista.foto} 
+                  width={200} 
+                  height={200}>
+                </Image>
             
               </div>
       </div>

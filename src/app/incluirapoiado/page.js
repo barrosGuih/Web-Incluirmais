@@ -3,7 +3,7 @@ import Style from './page.module.css';
 import Image from 'next/image';
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
-import ApoiadoForm from '../../components/incluirapoiado/apoiadorform'
+import ApoiadoForm from '../../components/incluirapoiado/apoiadoform'
 import Incluir from './imgs/incluir.png'
 
 export default function HomeInicial() {

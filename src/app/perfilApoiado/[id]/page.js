@@ -50,9 +50,17 @@ const AlunoPage = () => {
               <Link href=".././vincularApoiador">
                 <button className={Style.botaoadicionar}>Adicionar apoiador</button>
               </Link>
+          
             </div>
           </div>
+          <Image className={Style.fotoperfil}
+                  src={bolsista.foto} 
+                  width={200} 
+                  height={200}>
+
+                  </Image>
         </div>
+        
         <h1 className={Style.detalhes}>Detalhes sobre o aluno:</h1>
         <div className={Style.containerperfil}>
           <div className={Style.perfilaluno2}>

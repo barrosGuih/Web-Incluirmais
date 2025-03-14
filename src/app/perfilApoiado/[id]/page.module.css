@@ -72,8 +72,7 @@
 }
 
 .name1{
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-right: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -158,4 +157,13 @@
     margin: 10px;
     border-radius: 38px;
     font-family: 'DM Sans';
+}
+
+.fotoperfil{
+    width: 10%;
+    height: 40vh;
+    position: relative;
+    bottom: 65%;
+    right: 35%;
+    border-radius: 100%;
 }
