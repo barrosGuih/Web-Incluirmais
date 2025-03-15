@@ -57,8 +57,7 @@ const AlunoPage = () => {
                   src={bolsista.foto} 
                   width={200} 
                   height={200}>
-
-                  </Image>
+            </Image>
         </div>
         
         <h1 className={Style.detalhes}>Detalhes sobre o aluno:</h1>

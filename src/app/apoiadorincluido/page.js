@@ -13,7 +13,7 @@ export default function ApoiadorIncluido() {
           <Link href={"./homeInicial"}><div className={Style.logocontainer}>
             <Image className={Style.Logo} src={Incluir}/>
           </div></Link>
-          <h1 className={Style.texto1}>Aluno incluido com sucesso!</h1>
+          <h1 className={Style.texto1}>Aluno Apoiador incluido com sucesso!</h1>
           <Image className={Style.ok} src={Ok}></Image>
           <Link href={"./homeInicial"}><button className={Style.enviar} type='submit'>Voltar a tela inicial</button></Link>
         </div>
