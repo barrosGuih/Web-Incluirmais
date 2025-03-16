@@ -33,7 +33,7 @@ export default function AlunoForm({ onAddAluno }) {
           type='text'
           value={nome}
           onChange={(e) => setnome(e.target.value)}
-        />
+          required/>
       </div>
 
       <div className={styles.containerforms}>
@@ -43,7 +43,7 @@ export default function AlunoForm({ onAddAluno }) {
           type='text'
           value={matricula}
           onChange={(e) => setmatricula(e.target.value)}
-        />
+        required/>
       </div>
 
       <div className={styles.containerforms}>
@@ -63,17 +63,17 @@ export default function AlunoForm({ onAddAluno }) {
           type='text'
           value={turma}
           onChange={(e) => setturma(e.target.value)}
-        />
+          required/>
       </div>
 
       <div className={styles.containerdescr}>
         <label className={styles.descr}>Descrição</label>
-        <input
+        <textarea
           className={styles.forms1}
           type='text'
           value={descricao}
           onChange={(e) => setdescricao(e.target.value)}
-        />
+          required/>
       </div>
 
       <div className={styles.enviardiv}>

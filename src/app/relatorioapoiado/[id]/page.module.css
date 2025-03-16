@@ -17,8 +17,8 @@
 
  
 .boxperfil_bground1{
-    width: 97%;
-    height: 96%;
+    width: 97vw;
+    height: 96vh;
     background-color: #d7c59d44;
     border-radius: 38px;
     display: flex;
@@ -29,6 +29,7 @@
 .conteudorelatorio{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .pontos{
@@ -74,7 +75,6 @@
 }
 
 .fimrelatorio{
-    margin-top: 8%;
     width: 50%;
     align-items: center;
     font-family: 'Inter', sans-serif;

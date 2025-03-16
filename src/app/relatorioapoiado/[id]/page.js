@@ -76,7 +76,7 @@ const AlunoPage = () => {
             <h3 className={Style.pontos}>5.0 Observação e Resultados da Avaliação</h3>
             <textarea id={Style.area} className={Style.motivoavali}></textarea>
             </section>
-            <div className={Style.divbotao}>
+            <div className={Style.divbotaoo}>
             <button className={Style.fimrelatorio}>Enviar Relatório</button>
             </div>
         </div>

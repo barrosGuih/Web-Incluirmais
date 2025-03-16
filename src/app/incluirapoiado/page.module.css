@@ -40,12 +40,13 @@
 
 .texto1{
     text-align: center;
-    font-size: 300%;
+    font-size: 280%;
     font-weight: bold;
     letter-spacing: 5px;
     font-family: 'DM Sans';
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0.07886904761904767) 0%, rgba(0,0,0,0.6587009803921569) 77%);
+    margin-bottom: 8%;
 }
 
 .forms{

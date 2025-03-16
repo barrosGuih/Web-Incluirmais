@@ -52,7 +52,7 @@ export default function Apoiadores({ params }) {
             
         </div>
         <div className={Style.botoessecun}>
-            <Link href={'./incluirapoiador'}><button className={Style.butterc}> INCLUIR NOVO APOIADO</button></Link>
+            <Link href={'./incluirapoiador'}><button className={Style.butterc}> INCLUIR NOVO APOIADOR</button></Link>
           </div>
       </div>
     </div>

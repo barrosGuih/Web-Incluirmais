@@ -68,7 +68,7 @@ export default function AlunoForm({ onAddAluno }) {
 
       <div className={styles.containerdescr}>
         <label className={styles.descr}>Descrição</label>
-        <input
+        <textarea
           className={styles.forms1}
           type='text'
           value={descricao}
