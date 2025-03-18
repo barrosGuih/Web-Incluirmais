@@ -15,8 +15,15 @@ export default function HomeInicial() {
             ></Image>
             <h1 className={Style.hello}>Bem Vindo, Sicrano!</h1>
           </div>
-          <h1 className={Style.configname}>Seja bem vindo ao INCLUIR+</h1>
-          <h3 className={Style.information}>Aqui você encontrará facilidade de acesso
+          <div className={Style.escopo}>
+          <Image
+            src={'https://i.ibb.co/Dg5pnHjF/incluirpluslogo-1-3-3.png'}
+            width={500}
+            height={500}
+            className={Style.logo} 
+            ></Image>
+         {/* <h1 className={Style.information}>Seja bem vindo ao INCLUIR+</h1>*/}
+          <h3 className={Style.information}>Seja bem vindo ao INCLUIR+!<br></br><br></br>Aqui você encontrará facilidade de acesso
 às ajudas psicopedagogas, onde você
 encontrará alunos apoiadores, aprovados
 pelo sistema de aluno apoiador, para auxiliar
@@ -24,9 +31,10 @@ seus problemas durante as aulas.
 
 Começe a fazer umas pesquisas para saber
 qual o seu aluno apoiador de hoje!</h3>
+</div>
         <div className={Style.botooes}>
-            <Link className={Style.botaohome} href={"./apoiadores"}><button className={Style.botaohome}>Apoiadores</button></Link>
-            <Link className={Style.botaohome1} href={"./apoiados"}><button className={Style.botaohome1}>Apoiados</button></Link>
+            <Link className={Style.botaohome} href={"./apoiadores"}><button className={Style.botaohome}><Image src={'https://i.ibb.co/gFMChP3B/aluna.png'} width={40} height={40}></Image>Alunos Apoiadores</button></Link>
+            <Link className={Style.botaohome} href={"./apoiados"}><button className={Style.botaohome}><Image src={'https://i.ibb.co/8gJktMqV/aluno.png'} width={40} height={40}></Image>Alunos Apoiados</button></Link>
         </div>
           
         </div>
