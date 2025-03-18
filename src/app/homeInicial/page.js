@@ -24,7 +24,7 @@ export default function HomeInicial() {
             ></Image>
          {/* <h1 className={Style.information}>Seja bem vindo ao INCLUIR+</h1>*/}
           <h3 className={Style.information}>Seja bem vindo ao INCLUIR+!<br></br><br></br>Aqui você encontrará facilidade de acesso
-às ajudas psicopedagogas, onde você
+às ajudas psicopedagogas, você
 encontrará alunos apoiadores, aprovados
 pelo sistema de aluno apoiador, para auxiliar
 seus problemas durante as aulas.
