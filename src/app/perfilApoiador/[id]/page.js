@@ -1,15 +1,47 @@
+'use client'
+
 import Style from './page.module.css';
 import Link from 'next/link';
-import { getAlunosById } from '../../../lib/apoiadores';
 import Image from 'next/image';
+import { useState, useEffect} from 'react';
+import { useParams } from 'next/navigation';
 
-export default async ({ params }) => {
-  const bolsista = await getAlunosById(params.id);
+const ApoiadorPage = () => {
+  const [bolsista, setBolsista] = useState(null);
+  const [error, setError] = useState(null);
+  const params = useParams();
+  const { id } = params;
+
+  useEffect(() => {
+    const fetchData = async () => {
+      if (id) {
+        try {
+          const res = await fetch(`/api/apoiador/${id}`);
+          if (!res.ok) {
+            throw new Error('Erro ao buscar dados do aluno apoiador');
+          }
+          const data = await res.json();
+          setBolsista(data);
+        } catch (err) {
+          setError(err.message);
+        }
+      }
+    };
+    fetchData();
+  }, [id]);
+
+  if (error) {
+    return <div className={Style.containerinfo}>Erro:: {error}</div>;
+  }
+
+  if (!bolsista) {
+    return <div className={Style.containerinfo}>Carregando...</div>;
+  }
+
   return (
     <div className={Style.container}>
       <div className={Style.boxperfil_bground1}>
         <div className={Style.perfilaluno}>
-          <Image></Image>
           <h1 className={Style.name}>{bolsista.nome}</h1>
 
                 <div className={Style.conteudo}>
@@ -37,11 +69,6 @@ export default async ({ params }) => {
                 </Link>
             
                 </div>
-                <Image className={Style.fotoperfil}
-                  src={bolsista.foto} 
-                  width={200} 
-                  height={200}>
-                </Image>
             
               </div>
       </div>
@@ -49,3 +76,5 @@ export default async ({ params }) => {
     </div>
   );
 }
+
+export default ApoiadorPage;

@@ -31,11 +31,11 @@ const AlunoPage = () => {
   }, [id]);
 
   if (error) {
-    return <div>Erro:: {error}</div>;
+    return <div className={Style.containerinfo}>Erro:: {error}</div>;
   }
 
   if (!bolsista) {
-    return <div>Carregando...</div>;
+    return <div className={Style.containerinfo}>Carregando...</div>;
   }
 
   return (

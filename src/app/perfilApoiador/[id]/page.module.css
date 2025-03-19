@@ -15,6 +15,20 @@
     margin: 0%  0.3%;
 }
 
+.containerinfo{
+    width: calc(100vw - 30px);
+    height: calc(100vh - 20px);
+    background-color: rgba(234, 231, 231, 0.915);
+    position: relative;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%  0.3%;
+    font-size: 250%;
+}
+
  
 .boxperfil_bground1{
     width: 97%;
@@ -115,7 +129,6 @@
     display: inline-flex;
     grid-column: auto;
     margin: 8px 0;
-    flex-wrap: wrap;
     
 }
 
@@ -140,8 +153,8 @@
 }
 
 .fotoperfil{
-    width: 10%;
-    height: 40vh;
+    width: 13%;
+    height: 23vh;
     position: relative;
     bottom: 65%;
     right: 35%;

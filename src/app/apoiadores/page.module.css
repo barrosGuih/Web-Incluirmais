@@ -137,6 +137,7 @@
     color: black;
     text-decoration:solid white;
     text-decoration: none;
+    text-align: start;
     position: relative;
     bottom: 20%;
 }
@@ -147,6 +148,8 @@
 
 .divdotexto{
     display: inline-flex;
+    justify-content: start;
+    flex-direction: column;
 }
 
 .info{
@@ -161,6 +164,7 @@
     position: relative;
     right: 40%;
     bottom: 265%;
+    border-radius: 200%;
 }
 
 .butterc{
